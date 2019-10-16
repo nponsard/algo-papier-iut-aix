@@ -6,7 +6,7 @@
     "publisher": "nilsponsard",
     "displayName": "algo papier iut aix",
     "description": "Coloration syntaxique pour l'algorithmique sur papier de l'IUT d'Aix",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "repository": {
         "url": "https://github.com/sautax/vscode-algo-aix"
     },
