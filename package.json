@@ -8,7 +8,7 @@
     "description": "Coloration syntaxique pour l'algorithmique sur papier de l'IUT d'Aix",
     "version": "0.2.0",
     "repository": {
-        "url": "https://github.com/sautax/vscode-algo-aix"
+        "url": "https://github.com/sautax/algo-papier-iut-aix"
     },
     "engines": {
         "vscode": "^1.39.0"
