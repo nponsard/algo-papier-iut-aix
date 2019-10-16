@@ -1,2 +1,3 @@
-# algo-papier-iut-aix
-algo iut
+# Fonctionnalités 
+ - coloration syntaxique
+ - snippets

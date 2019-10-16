@@ -1,0 +1,79 @@
+{
+	"fonction def": {
+		"prefix": "fonc",
+		"body": [
+			"fonction ${1:nom}(${2:parametres}) : renvoie ${3:typeretour}",
+			"debut",
+			"\t$0",
+			"fin"
+		],
+		"description": "Insertion d'un bloc de fonction"
+	},
+	"procedure": {
+		"prefix": "procedure",
+		"body": [
+			"procedure ${1:nom}(${2:parametres})",
+			"debut",
+			"\t$0",
+			"fin"
+		],
+		"description": "Insertion d'un bloc de fonction de structure InOut"
+	},
+	"algorithme": {
+		"prefix": "algo",
+		"body": [
+			"algorithme ${1:nom}",
+			"debut",
+			"\t$0",
+			"fin"
+		],
+		"description": "Insertion d'un bloc d'algorithme"
+	},
+	"pour": {
+		"prefix": "pour",
+		"body": [
+			"pour (${1:i} variant_de ${2:min} a ${3:max}) ",
+			"faire",
+			"\t$0",
+			"ffaire"
+		],
+		"description": "Insertion d'un bloc de boucle \"pour\""
+	},
+	"si": {
+		"prefix": "si",
+		"body": [
+			"si (${1:conditon})",
+			"\t$0",
+			"fsi"
+		],
+		"description": "Insertion d'un bloc \"si\""
+	},
+	"si-sinon": {
+		"prefix": "sisinon",
+		"body": [
+			"si (${1:conditon})",
+			"\t$0",
+			"sinon",
+			"\t",
+			"fsi"
+		],
+		"description": "Insertion d'un bloc \"si-sinon\""
+	},
+	"tant_que": {
+		"prefix": "tant_que",
+		"body": [
+			"tant_que (${1:condition})",
+			"faire",
+			"\t$0",
+			"ffaire"
+		],
+		"description": "Insertion d'un bloc \"tant que\""
+	},
+	"<-": {
+		"prefix": "prend",
+		"body": [
+			"<- $0"
+		],
+		"description": "Assignation d'une valeur à une variable"
+	}
+}

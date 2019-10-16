@@ -1,0 +1,99 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "algo-Aix",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#expression"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#string"
+		},
+		{
+			"include": "#params"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "comment.line",
+					"match": "//.*$"
+				},
+				{
+					"name": "comment.block",
+					"begin": "\\/\\*",
+					"end": "\\*\\/"
+				},
+				{
+					"name": "keyword.control.algo-aix",
+					"match": "\\b(si|sinon_si|sinon|fsi|procedure|fonction|algorithme|tant_que|pour|renvoie|jusqua|repeter)\\b"
+				},
+				{
+					"name": "support.type",
+					"match": "\\b(faire|ffaire|debut|fin|boucle|fboucle)\\b"
+				},
+				{
+					"name": "variable.language",
+					"match": "\\b(declarer)\\b"
+				},
+				{
+					"name": "storage.type",
+					"match": "\\b(caractere|string|tableau_de|booleen|entier|entier_naturel|reel)\\b"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "\\b(\\d)\\b"
+				},
+				{
+					"name": "constant.language",
+					"match": "\\b(vrai|faux)\\b"
+				},
+				{
+					"name": "keyword.operator",
+					"match": "\\b(vaut|ne_vaut_pas|<|>|<=|>=)\\b"
+				},
+				{
+					"name": "keyword.control",
+					"match": "\\b(OU|OU_SINON|ET|ET_ALORS)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.algo-aix",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.algo-aix",
+					"match": "\\\\."
+				}
+			]
+		},
+		"string": {
+			"name": "constant.character",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.algo-aix",
+					"match": "\\\\."
+				}
+			]
+		},
+		"expression": {
+			"name": "support.function",
+			"match": "afficher|saisir|ligne_suivante|taille|toupper|tolower|succ|pred|allonger|redimensionner"
+		},
+		"params": {
+			"name": "variable.parameter",
+			"match": "\\b(in|in_out|out)\\b"
+		}
+	},
+	"scopeName": "source.algo"
+}

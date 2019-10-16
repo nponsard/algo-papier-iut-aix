@@ -1,0 +1,52 @@
+{
+    "name": "algo-papier-iut-aix",
+    "author": {
+        "name": "nilsponsard"
+    },
+    "publisher": "nilsponsard",
+    "displayName": "algo papier iut aix",
+    "description": "Coloration syntaxique pour l'algorithmique sur papier de l'IUT d'Aix",
+    "version": "0.1.0",
+    "repository": {
+        "url": "https://github.com/sautax/vscode-algo-aix"
+    },
+    "engines": {
+        "vscode": "^1.39.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "algo-aix",
+                "aliases": [
+                    "algo-Aix",
+                    "algo-aix"
+                ],
+                "extensions": [
+                    ".algo"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "algo-aix",
+                "scopeName": "source.algo",
+                "path": "./syntaxes/algo-aix.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "algo-aix",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    },
+    "__metadata": {
+        "id": "a3773b88-2c53-4e04-8da8-8de65f2d9a72",
+        "publisherDisplayName": "nilsponsard",
+        "publisherId": "573d7463-a908-4962-a1ce-c496d3c6e849"
+    }
+}
