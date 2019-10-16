@@ -1,6 +1,6 @@
 {
-	"fonction def": {
-		"prefix": "fonc",
+	"fonction": {
+		"prefix": "fonction",
 		"body": [
 			"fonction ${1:nom}(${2:parametres}) : renvoie ${3:typeretour}",
 			"debut",
@@ -20,7 +20,7 @@
 		"description": "Insertion d'un bloc de fonction de structure InOut"
 	},
 	"algorithme": {
-		"prefix": "algo",
+		"prefix": "algorithme",
 		"body": [
 			"algorithme ${1:nom}",
 			"debut",
@@ -48,7 +48,7 @@
 		],
 		"description": "Insertion d'un bloc \"si\""
 	},
-	"si-sinon": {
+	"si_sinon": {
 		"prefix": "sisinon",
 		"body": [
 			"si (${1:conditon})",
@@ -75,5 +75,23 @@
 			"<- $0"
 		],
 		"description": "Assignation d'une valeur à une variable"
+	},
+	"declarer": {
+		"prefix": "declarer",
+		"body": [
+			"declarer ${1:nom} : ${2:type};"
+		]
+	},
+	"declarer et affecter": {
+		"prefix": "declarer et affecter",
+		"body": [
+			"declarer ${1:nom} : ${2:type} <- ${3:valeur};"
+		]
+	},
+	"declarer constante": {
+		"prefix": "delarer constante",
+		"body": [
+			"declarer K${1:nom} : ${2:type} <- ${3:valeur};"
+		]
 	}
 }
