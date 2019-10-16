@@ -32,7 +32,7 @@
 				},
 				{
 					"name": "keyword.control.algo-aix",
-					"match": "\\b(si|sinon_si|sinon|fsi|procedure|fonction|algorithme|tant_que|pour|renvoie|jusqua|repeter)\\b"
+					"match": "\\b(si|sinon_si|sinon|fsi|procedure|fonction|algorithme|tant_que|pour|renvoie|jusqua|repeter|sortie|continue)\\b"
 				},
 				{
 					"name": "support.type",
